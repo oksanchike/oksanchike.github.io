@@ -1,0 +1,23 @@
+{
+  "name": "oksanchike.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "css-loader": "0.23.1",
+    "style-loader": "0.13.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oksanchike/oksanchike.github.io.git"
+  },
+  "author": "oksanchike",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oksanchike/oksanchike.github.io/issues"
+  }
+}
