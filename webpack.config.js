@@ -4,7 +4,7 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 module.exports = {
     entry: {
         common: ["react", "react-dom"],
-        main: ["./entry.js"]
+        templatePage: ["./TemplatePage/index.js"]
     },
     output: {
         path: __dirname,

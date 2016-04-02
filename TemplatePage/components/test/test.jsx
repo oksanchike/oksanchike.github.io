@@ -1,4 +1,4 @@
-import styles from "test.scss";
+import styles from "./test.scss";
 import {Component} from "react";
 
 class Test extends Component {
