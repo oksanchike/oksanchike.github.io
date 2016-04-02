@@ -1,9 +1,10 @@
+import styles from "test.scss";
 import {Component} from "react";
 
 class Test extends Component {
     render() {
         return (
-            <div>It's react</div>
+            <div className={styles.wrapper}>It's react</div>
         );
     }
 }

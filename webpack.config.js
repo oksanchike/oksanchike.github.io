@@ -1,4 +1,5 @@
 const webpack = require("webpack");
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
     entry: {
@@ -11,10 +12,10 @@ module.exports = {
     },
     module: {
         loaders: [
-            /*{
-             test: /\.(css|scss)$/,
-             loader: ExtractTextPlugin.extract("style-loader", "css?sourceMap&localIdentName=[name]-[local]-[hash:base64:8]!postcss-loader?sourceMap")
-             },*/
+            {
+                test: /\.(css|scss)$/,
+                loader: ExtractTextPlugin.extract("style-loader", "css?sourceMap&localIdentName=[name]-[local]-[hash:base64:8]!postcss-loader?sourceMap")
+            },
             {
                 test: /\.scss$/,
                 loader: "sass?outputStyle=expanded&sourceMap=true&sourceMapContents=true"
@@ -46,6 +47,7 @@ module.exports = {
         root: [__dirname]
     },
     plugins: [
-        new webpack.optimize.CommonsChunkPlugin("common", "common.js")
+        new webpack.optimize.CommonsChunkPlugin("common", "common.js"),
+        new ExtractTextPlugin("[name].css", { allChunks: true })
     ]
 };

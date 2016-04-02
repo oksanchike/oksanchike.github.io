@@ -23,9 +23,6 @@ webpackJsonp([1],{
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	//import "!style!css!./style.css";
-
-
 	_reactDom2.default.render(React.createElement(_test2.default, null), document.getElementById("content"));
 
 /***/ },
@@ -41,7 +38,13 @@ webpackJsonp([1],{
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+	var _test = __webpack_require__(163);
+
+	var _test2 = _interopRequireDefault(_test);
+
 	var _react = __webpack_require__(1);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -63,7 +66,7 @@ webpackJsonp([1],{
 	        value: function render() {
 	            return React.createElement(
 	                "div",
-	                null,
+	                { className: _test2.default.wrapper },
 	                "It's react"
 	            );
 	        }
@@ -73,6 +76,14 @@ webpackJsonp([1],{
 	}(_react.Component);
 
 	exports.default = Test;
+
+/***/ },
+
+/***/ 163:
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"wrapper":"test-wrapper-22wHUxxd"};
 
 /***/ }
 
