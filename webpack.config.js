@@ -1,3 +1,4 @@
+const path = require("path");
 const webpack = require("webpack");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
@@ -7,7 +8,7 @@ module.exports = {
         templatePage: ["./TemplatePage/index.js"]
     },
     output: {
-        path: __dirname,
+        path: path.join(__dirname, "dist"),
         filename: "[name].js"
     },
     module: {
